@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'DottedSongtiSquare';
-  src: url('/fonts/DottedSongtiDiamondRegular.otf') format('opentype');
+  src: url('fonts/DottedSongtiSquareRegular.otf') format('opentype');
 }
 
 html, body {
