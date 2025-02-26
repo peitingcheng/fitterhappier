@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <button id="menuBtn">+</button>
+    <button id="infoBtn"> </button>
+    <div id="overlay" class="hidden">
+      <div class="modal-content">
+        <h2>Your new year resolution for 2025?</h2>
+        <input type="text" id="newLyric" placeholder="Enter your answer...">
+        <button id="submitBtn">Submit</button>
+      </div>
+    </div>
+    <div id="infoOverlay" class="hidden">
+      <div class="modal-content">
+        <h2>About This Project</h2>
+        <p>This interactive artwork is inspired by Radiohead's "Fitter Happier".</p>
+        <p>Each cell represents a modern life expectation or resolution.</p>
+        <p>Click the "+" button to add your own thoughts about modern life.</p>
+        <button id="closeInfoBtn">Close</button>
+      </div>
+    </div>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>

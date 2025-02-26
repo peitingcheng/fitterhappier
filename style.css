@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'DottedSongtiSquare';
+  src: url('/fonts/DottedSongtiDiamondRegular.otf') format('opentype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    display: block;
+  }
+  
+#menuBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+#menuBtn span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.modal-content {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 1px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 18px;
+  font-family: 'DottedSongtiSquare';
+}
+
+#newLyric {
+  width: 90%;
+  padding: 10px;
+  margin: 6px 0;
+  font-size: 16px;
+  font-family: 'DottedSongtiSquare';
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  cursor: pointer;
+  font-family: 'DottedSongtiSquare';
+}
+
+#submitBtn {
+  margin-top: 20px;
+  background-color: #ffffffb0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#infoBtn {
+  position: fixed;
+  bottom: -100px;
+  right: -100px;
+  z-index: 2;
+  width: 160px;
+  height: 160px;
+  transform: rotate(45deg);
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: opacity 0.3s ease;
+}
+
+#infoBtn:hover {
+  opacity: 0.7;
+}
+
+#infoOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+#closeInfoBtn {
+  margin-top: 20px;
+  background-color: #ffffffb0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content p {
+  color: white;
+  margin: 10px 0;
+  font-family: 'DottedSongtiSquare';
+  line-height: 1.5;
+}
